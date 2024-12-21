@@ -41,7 +41,11 @@ class GeminiProChatModel:
 
         try:
             response = requests.post(self.api_url, json=payload, headers=headers, stream=True)
-            if response.status_code != 200:
+            if response.status_code == 400:
+                raise ResponseError(response.status_code, "BAD_REQUEST: Not all parameters have been entered correctly")
+            elif response.status_code == 500:
+                raise ResponseError(response.status_code, "INTERNAL_SERVER_ERROR: The server has experienced failures")
+            elif response.status_code != 200:
                 raise ResponseError(response.status_code, response.text)
 
             # Process response stream
