@@ -2,10 +2,6 @@
 
 Welcome to the **Gemini Pro Chat Model** project! This Python-based library allows you to interact with the **Gemini Pro** API for chat-based queries. Whether you're looking to create a chatbot or integrate AI-powered conversations into your project, this is your go-to solution. 🚀
 
-## 📜 Description
-
-The **Gemini Pro Chat Model** is a Python class that helps you send and receive messages from the **Gemini Pro API**. It allows users to send a query and get a response, handle streaming messages, and process the responses seamlessly. 💬🔮
-
 ### Key Features:
 - 💬 Seamlessly interact with the Gemini Pro API.
 - 📈 Stream real-time responses.
