@@ -54,6 +54,14 @@ print(response)
 ## Parameters:
 - messages: A list of ChatMessage objects.
 
+## API Response Codes
+
+| **Code** | **Error**                 | **Description**                                             |
+|----------|---------------------------|-------------------------------------------------------------|
+| 400      | BAD_REQUEST               | Not all parameters have been entered correctly             |
+| 500      | INTERNAL_SERVER_ERROR     | The server has experienced failures                        |
+| 200      | Success                   | The API worked without issues                              |
+
 ## 💡 How It Can Help Users
 This project is perfect for developers looking to:
 
